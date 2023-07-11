@@ -1,6 +1,6 @@
 connection: "bq_all"
 
-include: "/views/stock_qty.view.lkml"                # include all views in the views/ folder in this project
+include: "/views/sql_runner_query.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
 # include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
 
@@ -19,5 +19,5 @@ include: "/views/stock_qty.view.lkml"                # include all views in the 
 #   }
 # }
 explore: stock_qty_alert {
-  from: stock_qty
+  from: sql_runner_query
 }
